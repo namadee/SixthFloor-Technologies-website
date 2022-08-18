@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+#particles-js{
+  background: white;
+  position: absolute;
+  width: 100%;
+}
+/* nav bar */
+
+nav {
+  background: #F2F2F2;
+  width: 100%;
+  color: black;
+  position: fixed;
+  z-index: 1;
+  
+}
+
+nav ul{
+  float: right;
+  display: block;
+  margin-left: 40px;
+  margin-right: 1rem;
+  color: black;
+}
+
+ nav ul .show{
+  left: 0;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 2rem;
+  line-height: 80px;
+}
+
+nav li a{
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: black;
+  margin: 0 2.5rem;
+}
+i{
+  font-style: normal;
+  font-size: 1.5em;
+  padding: 0.3rem;
+}
+nav #icon{
+  font-size: 1.5em;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  text-align: center;
+}
+
+
+/* Logo */
+.logo {
+    font-size: 2.5em;
+    display: inline-block;
+    margin: 0.5rem 2rem;
+
+}
+.logo span {
+    color: #646262;
+}
+
+/*content*/
+
+.content{
+  position: absolute;
+  width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.content p{
+  margin-top: 25%;
+    font-size: 2.5em;
+    width: 65%;
+}
+
+.content img {
+    width: 30rem;
+    padding: 10rem 1rem;
+}
+
+/*social*/
+
+.social{
+  float: left;
+  display: flex;
+  font-size: 2em;
+  text-decoration: none;
+  margin: 1rem;
+}
+
+.social i{
+  margin: 0.5rem;
+}
+
+/* ----------- end of page1 ---------- */
+
+/* ----------- about us ---------- */
+
+.about_content{
+  display: flex;
+  margin-top: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.2em;
+  padding: 1rem;
+  padding-top: 9rem;
+}
+.title{
+  font-size: 1.5em;
+  font-weight: 400;
+  
+}
+.mission{
+  padding: 1rem;
+  margin: 0;
+
+}
+.mission .title{
+  padding-bottom: 1rem;
+}
+.story{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.story img {
+  width: 25%;
+  margin: 1rem;
+}
+
+.story .para {
+
+  width: 60%;
+}
+
+/* end of about */
+
+/*team page */
+
+.team_content{
+  background: #CFD4E4;
+  position: relative;
+  padding-top: 8rem;
+}
+
+.heading{
+  padding: 2.5rem 2rem;
+}
+.line{
+ 
+  width: 9rem;
+  height: 0.7rem;
+  background: black;
+}
+
+.team_content .title{
+  font-size: 2.5em;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.container .card{
+  padding: 1rem;
+  width: 30%;
+}
+
+.card .profile{
+  padding: auto;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.card .profile img{
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+
+}
+
+/* .card .profile img{
+  padding: auto;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+ 
+} */
+
+/* .image-cropper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+} */
+
+.card p{
+  padding: auto;
+  margin: auto;
+  text-align: justify;
+  margin-top: 1rem;
+  width: 80%;
+}
+
+/* end of team page */
+
+/* end of team page */
+
+/*projects page*/
+.projects_content{
+  background: #CFD4E4;
+  height: 100vh;
+  padding-top: 8rem;
+}
+
+.projects_content .line{
+  width: 12rem;
+}
+.projects_content .title{
+  font-size: 2.5em;
+}
+.project_title{
+  margin-left: 1.5rem;
+  font-size: 1.5em;
+}
+
+/* responsive  */
+
+@media only screen and (max-width: 900px){
+
+  body{
+    font-size: 1.2em;
+  }
+
+  .logo{
+    font-size: 1.5em;
+  }
+  nav #icon{
+    display: block;
+    top: 1rem;
+    float: right;
+ 
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.5s;
+    left: -110%;
+    background-color: #F2F2F2;
+    text-align: center;
+  }
+  nav .show{
+    left: -11%;
+  }
+
+  nav li{
+    display: block;
+    line-height: 70px;
+    
+  }
+
+  .content{
+    width: 100%;
+  }
+  
+  .content p{
+  
+    margin-top: 10rem;
+    margin-left: 0;
+    font-size: 1.5em;
+    width: 90%;
+    padding: 1rem;
+  }
+  
+  .content img {
+      width: 90%;
+      padding: 1rem;
+  }
+
+  .story{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .story img {
+    width: 90%;
+    margin: 1rem;
+  }
+  
+  .story .para {
+    width: 100%;
+    margin: 1rem;
+  }
+  .heading {
+    padding: 1.5rem 2rem;
+  }
+
+  .line{
+ 
+    width: 5rem;
+    height: 0.5rem;
+  }
+  .container .card{
+    padding: 3rem;
+    width: 50%;
+  }
+
+  .card .profile{
+    padding: auto;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #646262;
+  
+  }
+  .project_title{
+    font-size: 1em;
+  }
+  .projects_content .line{
+    width: 5rem;
+    height: 0.5rem;
+  }
+  .heading .title{
+    font-size: 1.5em;
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+ 
+
+  .container .card{
+    width: 90%;
+  }
+
+  .container .profile{
+    width: 85px;
+    height: 85px;
+  }
+  .line{
+ 
+    width: 6rem;
+  }
+
+  
+}
+
+@media only screen and (max-width: 480px){
+  body{
+    font-size: 0.6em;
+  }
+
+
+  .content p{
+    margin-top: 5rem;
+    margin-left:1rem;
+  }
+
+  .mission{
+    margin-left: 1rem;  
+  }
+  .story{
+    margin-left: 1rem;
+  }
+  
+}
+
+@media only screen and (max-width: 320px){
+  body{
+    font-size: 0.5em;
+  }
+
+
+  .container .card{
+    width: 100%;
+    padding: 1rem 0.5rem;
+  }
+.card p{
+  padding: 0 1rem;
+  font-size: 1.5em;
+};
+  .container .profile{
+    width: 65px;
+    height: 65px;
+  }  
+
+  .line{
+    width: 6rem;
+  }
+}
+
+
